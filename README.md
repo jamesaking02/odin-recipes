@@ -1,0 +1,1 @@
+In this project I will be creating a basic recipe website using HTML, and the skills I have just recently developed. The skills that will be demonstrated at completion are the use of headings, paragraphs, lists, links, and images.
