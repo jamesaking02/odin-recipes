@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+html {
+  width: 100%;
+  /*background-color: rgb(236, 243, 243);*/
+}
+
+body {
+  width: 90%;
+  background-color: lightgoldenrodyellow;
+  margin-left: 5%;
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 3em;
+  font-family: Itim, cursive;
+}
