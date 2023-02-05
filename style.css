@@ -6,10 +6,19 @@ html {
   background-color: rgb(236, 243, 243);
 }
 
+@media only screen and (max-width: 480px) {
+  html > body {
+    padding: 1.4em;
+    padding-bottom: 27em;
+  }
+
+  body > header {
+    align-items: center;
+  }
+}
+
 body {
-  width: 90%;
   background-color: lightgoldenrodyellow;
-  margin-left: 3%;
   padding: 4em;
 }
 

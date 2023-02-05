@@ -6,28 +6,157 @@ html {
 }
 
 header {
-  background-color: rgb(238, 239, 210);
-  padding: 2em;
+  background-color: rgb(228, 223, 218);
   max-width: 100%;
   border: 1px solid rgb(194, 194, 171);
 }
 
 body {
-  width: 90%;
-  background-color: rgb(230, 230, 191);
-  margin-left: 3%;
+  background-color: #dbaf59;
   border: 1px solid black;
-  box-shadow: 0px 4px 10px black;
-  padding: 2em;
+  
 }
 
-img {
-  display: block;
-  margin: auto;
+body > div.flex-container > section.intro {
+  background-image: linear-gradient(to right, rgb(132, 132, 125), rgb(168, 166, 166));
+}
+
+body > section.steps {
+  background-image: linear-gradient(to right, rgb(132, 132, 125), rgb(168, 166, 166));
+}
+
+section.ingredients {
+  background-color: rgb(228, 223, 218);
 }
 
 h1 {
   text-align: left;
   font-family: Ubuntu, sans-serif;
   font-size: 2em;
+}
+
+  a.link1,
+  a.link2,
+  a.link3 {
+    text-decoration: none;
+    color: black;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.5rem;
+  }
+
+  a.link1:hover,
+  a.link2:hover,
+  a.link3:hover {
+    opacity: 0.5;
+  }
+
+@media only screen and (min-width: 769px) {
+  body {
+    box-shadow: 0px 4px 10px black;
+    padding: 2em;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  body > div.flex-container > section.intro {
+    border-radius: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  body > section.steps {
+    border-radius: 2em;
+    margin-top: 2em;
+  }
+
+  img.wings,
+  img.scrambled,
+  img.smoothie {
+    padding: 2em;
+  }
+
+  .rounded, 
+  img.smoothie,
+  img.wings,
+  img.scrambled {
+    border-radius: 4em;
+  }
+
+  img.logo {
+    float: left;
+    width: 4%;
+    margin-left: 1em;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div.container ol {
+    display: flex;
+    padding-inline-start: 0px;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    list-style-type: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    display: flex;
+    margin: 0;
+    margin-left: 0%;
+    box-shadow: 0px;
+    padding: 1.4em;
+    flex-direction: column;
+    overflow-x: hidden !important;
+  }
+  .container > ol > li:first-of-type {
+    margin-top: 4em;
+  }
+
+  .container > ol > li {
+    margin-bottom: 4em;
+  }
+
+  img.wings,
+  img.scrambled,
+  img.smoothie {
+    width: 100%;
+  }
+
+  body > .flex-container > section.intro p, 
+  body > .flex-container > section.intro h2 {
+    text-align: center;
+  }
+
+
+  body > section.ingredients {
+    border-radius: 0em;
+  }
+
+  section.ingredients ul {
+    flex-flow: column;
+  }
+  
+  body > section {
+    padding: 1em;
+    overflow-x: auto;
+  }
+
+  section.steps li {
+    font-size: 1.1em;
+  }
+
+  img.logo {
+    float: left;
+    width: 15%;
+  }
+
+  div.container ol {
+    flex-direction: column;
+  }
+
+ 
 }

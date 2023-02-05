@@ -10,31 +10,13 @@ h1 {
   font-size: 2em;
 }
 
-header {
-  background-color: rgb(238, 239, 210);
-  padding: 2em;
-  max-width: 100%;
-  border: 1px solid rgb(194, 194, 171);
-}
-
-img.logo {
-  float: left;
-  width: 5%;
-}
-
 a img.logo:hover {
   opacity: 0.5;
 }
 
-img.smoothie {
-  float: left;
-  padding: 2em;
-  margin-left: auto;
-}
 
 section.intro {
   padding: 2em;
-  width: fit-content;
 }
 
 section.intro h2 {
@@ -54,7 +36,6 @@ section.intro p {
 
 section.ingredients {
   max-width: 100%;
-  background-color: rgb(238, 239, 210);
   padding: 2em;
   border-radius: 1em;
   clear: both;
