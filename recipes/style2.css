@@ -1,21 +1,108 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Ubuntu:wght@700&display=swap');
-
-html {
-  background-color: rgb(255, 255, 230);
-  
-}
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
 
 h1 {
-  text-align: center;
+  text-align: left;
   font-family: Ubuntu, sans-serif;
-  font-size: 3em;
+  font-size: 2em;
 }
 
-section h2 {
+header {
+  background-color: rgb(238, 239, 210);
+  padding: 2em;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgb(194, 194, 171);
+}
+
+img.logo {
+  float: left;
+  width: 5%;
+}
+
+a img.logo:hover {
+  opacity: 0.5;
+}
+
+img.scrambled {
+  float: left;
+  padding: 2em;
+  margin-left: auto;
+}
+
+section.intro {
+  padding: 2em;
+}
+
+section.intro h2 {
   text-align: center;
-  color: red;
-  font-size: 2rem;
+  color: rgb(253, 253, 174);
+  font-size: 2.8rem;
   font-family: Itim, cursive;
+  text-align: right;
+  text-shadow: 1.5px 1.5px black;
+}
+
+section.intro p {
+  font-family: Unbounded, cursive;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+section.ingredients {
+  max-width: 100%;
+  background-color: rgb(238, 239, 210);
+  padding: 2em;
+  border-radius: 1em;
+  clear: both;
+}
+
+section.ingredients h2,
+section.steps h2{
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+}
+
+section.ingredients ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-shrink: 3;
+  padding-inline-start: 0px;
+  margin-top: 4em;
+}
+
+section.ingredients li {
+  list-style-type: none;
+  font-size: 1.2em;
+  font-family: Itim, cursive;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+section.ingredients ul > li.egg {
+  list-style-image: url(../images/smaller-white-egg.png);
+  list-style-position: inside;
+}
+
+section.ingredients ul > li.butter {
+  list-style-image: url(../images/butter.png);
+  list-style-position: inside;
+}
+
+section.ingredients ul > li.snp {
+  list-style-image: url(../images/saltnpepper2.png);
+  list-style-position: inside;
+}
+
+section.steps {
+  padding: 2em;
+}
+
+section.steps li {
+  font-family: Unbounded, cursive;
+  margin-bottom: 2em;
 }
