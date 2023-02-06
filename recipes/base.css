@@ -1,13 +1,20 @@
 @charset "utf-8";
 
+
+
 html {
-  width: 100%;
   background-color: rgb(255, 255, 230);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 header {
   background-color: rgb(228, 223, 218);
-  max-width: 100%;
   border: 1px solid rgb(194, 194, 171);
 }
 
@@ -15,6 +22,11 @@ body {
   background-color: #dbaf59;
   border: 1px solid black;
   
+}
+
+img.logo {
+  float: left;
+  margin-left: 1em;
 }
 
 section.intro h2 {
@@ -25,6 +37,12 @@ section.intro p {
   font-family: Unbounded, cursive;
   text-align: right;
   font-size: 2.5vmin;
+}
+
+img.wing,
+img.smoothie,
+img.scrambled {
+  width: 100%;
 }
 
 section.ingredients {
@@ -116,15 +134,13 @@ h1 {
   }
 
   .rounded {
-    max-width: 100%;
     display: flex;
   }
 
   img.wings,
   img.scrambled,
   img.smoothie {
-    padding: 2em;
-    width: 100%;
+    padding: 2em 0em;
   }
 
   /* .rounded, 
@@ -134,16 +150,10 @@ h1 {
     border-radius: 4em;
   } */
 
-  img.logo {
-    float: left;
-    width: 4%;
-    margin-left: 1em;
-  }
-
   .flex-container {
     display: flex;
     flex-direction: row;
-    margin-right: 1.7em;
+    /* margin-right: 1.7em; */
   }
 
   div.container ol {
@@ -222,7 +232,7 @@ h1 {
 
   img.logo {
     float: left;
-    width: 15%;
+    /* width: 15%; */
   }
 
   div.container ol {
